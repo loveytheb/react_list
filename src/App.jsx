@@ -39,6 +39,8 @@ const App = () => {
     } else {
       setTodoList([...todolist, addList]);
     }
+    setTitle("")
+    setDetail("")
   }
 
 
@@ -88,7 +90,7 @@ const App = () => {
         <input className='input' value={title} onChange={addTitleHandler} />
         <span className='content'>내용</span>
         <input className='input' value={detail} onChange={addContentHandler} />
-        <button className='addbtn' onClick={clickAddBtnHandler}>추가하기</button>
+        <button className='addbtn'  onClick={clickAddBtnHandler}>추가하기</button>
       </div>
       <div>
         <span className='working'>Working</span>
